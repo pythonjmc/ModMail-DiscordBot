@@ -44,4 +44,4 @@ async def on_message(message):
 async def report(ctx, member : discord.Member, *, text):
     await member.send(text)
 
-bot.run("ODU0Nzc1NzQ1ODg4MjU2MDIw.YMo18g.XCuZ2DUWLkF4Pax61D5o5TfcP8A")
+bot.run("token")
