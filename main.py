@@ -20,7 +20,7 @@ async def on_message(message):
     if message.author == bot.user:
         return
     if str(message.channel.type) == 'private':
-        modmail_channel = discord.utils.get(bot.get_all_channels(), name = "modmail-report")
+        modmail_channel = discord.utils.get(bot.get_all_channels(), name = "Your_channel_name")
         await modmail_channel.send(f"{message.author.mention}\n**{message.content}**")
     elif str(message.channel) == 'modmail-report' and message.content.startswith("<"):
         member_object = message.mentions[0]
